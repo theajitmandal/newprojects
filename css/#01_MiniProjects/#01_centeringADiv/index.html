@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering a Div Inside another Div</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: 800;
+        }
+        /* Method I: using position property */
+        /* .parent {
+            position: relative;
+            width: 50%;
+            border: solid 5px red;
+            padding: 5px;
+            height: 50vh;
+        }
+        .child {
+            position: absolute;
+            width: 25%;
+            border: solid 2px blue;
+            padding: 5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        } */
+         /* Method II: using flexbox */
+        /* .parent {
+            width: 50%;
+            border: solid 5px red;
+            padding: 5px;
+            height: 50vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+        .child {
+            width: 25%;
+            border: solid 2px blue;
+            padding: 5px;
+         } */
+        /* Method III: using grid */
+        /* .parent {
+            width: 50%;
+            border: solid 5px red;
+            padding: 5px;
+            height: 50vh;
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+         }
+        .child {
+            width: 25%;
+            border: solid 2px blue;
+            padding: 5px;
+         } */
+        /* Method IV: using grid */
+        /* .parent {
+            width: 50%;
+            border: solid 5px red;
+            padding: 5px;
+            height: 50vh;
+
+            display: grid;
+            place-items: center;
+         }
+        .child {
+            width: 25%;
+            border: solid 2px blue;
+            padding: 5px;
+         } */
+
+        /* Method V flex and margin*/
+        /* .parent {
+            width: 80%;
+            border: solid 5px red;
+            padding: 5px;
+            height: 50vh;
+
+            display: flex;
+            
+         }
+        .child {
+            width: 40%;
+            background-color: red;
+            padding: 5px;
+
+            margin: auto;
+         } */
+
+         /* How to center text in a div*/
+         .text {
+            width: 600px;
+            height: 500px;
+            background-color: red;
+            color: white;
+            /* below code to center the text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+          
+    </style>
+</head>
+<body>
+    <!-- <h1>Centering a div inside another div</h1>    
+    <div class="parent">
+        <div class="child">Welcome to the CSS Course</div>
+    </div> -->
+
+    <!-- centering a text -->
+     <div class="text">Welcome to CSS</div>
+</body>
+</html>

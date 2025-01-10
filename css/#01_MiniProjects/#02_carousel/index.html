@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container-img {
+            width: 60vw;               
+            height: 50rem;
+            border-radius: 1rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;     
+            background-image: url('./images/pexels-asadphoto-3293148.jpg');       
+            background-size: cover;
+            animation: gallery 20s linear infinite;
+        }
+        @keyframes gallery {
+            0% {
+                background-image: url('./images/pexels-asadphoto-3293148.jpg');
+            }
+            25% {
+                background-image: url('./images/pexels-francesco-ungaro-2325446.jpg');
+            }
+            50% {
+                background-image: url('./images/pexels-pixabay-461940.jpg');
+            }
+            75% {
+                background-image: url('./images/pexels-samkolder-2387873.jpg');
+            }
+            100% {
+                background-image: url('./images/pexels-stefanstefancik-919606.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-img"></div>    
+</body>
+</html>
